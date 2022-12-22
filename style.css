@@ -9,7 +9,7 @@ body {
   display: flex;
   flex-direction: column;
   /* Background image */
-  background: url(images/shopping.jpg);
+  background: url(images/background.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
