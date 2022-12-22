@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  /* Background image */
+  background: url(images/shopping.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-color: #333;
+  background-blend-mode: multiply;
+  /* Text */
+  color: #fff;
+  text-align: center;
+}
+/* ---------------------------- */
+/* Header/Title */
+.title-container {
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+.title-container h1 {
+  font-size: 48px;
+}
+/* ---------------------------- */
+/* Input */
+.main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  margin: 20px;
+  gap: 10px;
+}
+.main-container input {
+  height: 39px;
+  width: 255.44px;
+}
+/* Add New Item */
+.addNewItem {
+  padding: 10px 20px;
+}
+.addNewItem:hover {
+  color: #fff;
+  background-color: #444;
+  cursor: pointer;
+}
+/* Delete Item */
+.remove {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 24px;
+  width: 24px;
+  margin-right: 10px;
+  background-color: #ff0000;
+  border: none;
+}
+.remove::before {
+  content: "\2716"; /* Unicode character for the cross symbol */
+  height: 22px !important;
+  width: 20px !important;
+  font-size: 16px;
+}
+button img {
+  display: flex;
+  content: "\2716";
+}
+.remove:hover {
+  background-color: buttonface;
+  border: 1px solid;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+/* ---------------------------- */
+/* Users List */
+.items {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 24px;
+  margin: 20px;
+}
+.items div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+div label {
+  width: 250px;
+  text-align: start;
+  flex-wrap: wrap;
+}
+/* ---------------------------- */
+/* Checkbox */
+.done {
+  margin-right: 10px;
+}
+input[type="checkbox"] {
+  /* Custom styles for the checkbox */
+  height: 24px;
+  width: 24px;
+  appearance: none;
+  background-color: #fff; /* Add a default background color */
+}
+input[type="checkbox"]:hover {
+  /* Custom styles for the hover state */
+  background-color: #63cc63;
+  border: 1px solid;
+  cursor: pointer;
+}
+input[type="checkbox"]::before {
+  /* Keeps the tick */
+  content: "\2713";
+  display: none;
+}
+input[type="checkbox"]:hover::before {
+  /* Custom styles for the hover state of the tick */
+  display: flex;
+  justify-content: center;
+  font-size: 18px;
+}
+input[type="checkbox"]:checked::before {
+  display: flex;
+  justify-content: center;
+}
+input[type="checkbox"]:checked {
+  /* Custom styles for the checked state */
+  background-color: #63cc63;
+  font-size: 18px;
+}
+input[type="checkbox"]:hover:checked {
+  /* Custom styles for the checked state */
+  background-color: #fff;
+  font-size: 18px;
+}
+/* ---------------------------- */
+/* Footer */
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: auto;
+  padding: 20px;
+}
